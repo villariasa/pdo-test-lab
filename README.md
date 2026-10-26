@@ -1,20 +1,28 @@
-# PHP PDO PostgreSQL Lab (Agriculture Database)
+# <img src="https://api.iconify.design/heroicons/circle-stack-solid.svg?color=%2310b981" width="34" height="34" align="center" /> PHP PDO PostgreSQL Lab (Agriculture DB)
+
+<p align="left">
+  <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/PostgreSQL-13+-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/PDO-Prepared_Statements-38B2AC?style=for-the-badge" alt="PDO" />
+  <img src="https://img.shields.io/badge/Icons-Tailwind_Heroicons-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind Icons" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+</p>
 
 A PHP Data Objects (PDO) laboratory and practice environment demonstrating secure database operations with PostgreSQL. This project showcases relational database modeling, automated schema migrations, transaction-managed seed scripts, and parameterized queries for an agricultural management domain.
 
 ---
 
-## 📋 Features
+## <img src="https://api.iconify.design/heroicons/clipboard-document-check-solid.svg?color=%2310b981" width="24" height="24" align="center" /> Features
 
-- **Robust PDO Connection**: Configured with `PDO::ERRMODE_EXCEPTION` and `PDO::FETCH_ASSOC` for error handling and clean data handling.
-- **SQL Injection Prevention**: Implementation of prepared statements (`PDOStatement::prepare` and `execute`) with bound parameters.
-- **Automated Installation & Seeding**: Self-contained `install.php` script that creates the `agriculture_db` database, generates relational tables with constraints and foreign keys, and seeds realistic test data inside atomic transactions.
-- **Relational Domain Model**: Represents an agricultural ecosystem covering Farmers, Farms, Crops, Plantings, and Harvests.
-- **Query Testing Suite**: CLI test runner (`testPlanting.php`) verifying filtering by status, area planted, seed quantity, and multi-condition criteria.
+- <img src="https://api.iconify.design/heroicons/check-circle-solid.svg?color=%2310b981" width="16" height="16" align="center" /> **Robust PDO Connection**: Configured with `PDO::ERRMODE_EXCEPTION` and `PDO::FETCH_ASSOC` for error handling and clean data handling.
+- <img src="https://api.iconify.design/heroicons/shield-check-solid.svg?color=%233b82f6" width="16" height="16" align="center" /> **SQL Injection Prevention**: Implementation of prepared statements (`PDOStatement::prepare` and `execute`) with bound parameters.
+- <img src="https://api.iconify.design/heroicons/arrow-path-solid.svg?color=%238b5cf6" width="16" height="16" align="center" /> **Automated Installation & Seeding**: Self-contained `install.php` script that creates the `agriculture_db` database, generates relational tables with constraints and foreign keys, and seeds realistic test data inside atomic transactions.
+- <img src="https://api.iconify.design/heroicons/circle-stack-solid.svg?color=%2306b6d4" width="16" height="16" align="center" /> **Relational Domain Model**: Represents an agricultural ecosystem covering Farmers, Farms, Crops, Plantings, and Harvests.
+- <img src="https://api.iconify.design/heroicons/command-line-solid.svg?color=%23f59e0b" width="16" height="16" align="center" /> **Query Testing Suite**: CLI test runner (`testPlanting.php`) verifying filtering by status, area planted, seed quantity, and multi-condition criteria.
 
 ---
 
-## 🗄️ Database Architecture
+## <img src="https://api.iconify.design/heroicons/table-cells-solid.svg?color=%2306b6d4" width="24" height="24" align="center" /> Database Architecture
 
 The schema represents a 5-table relational structure with cascading deletes and integrity constraints:
 
@@ -71,7 +79,7 @@ The schema represents a 5-table relational structure with cascading deletes and 
 
 ---
 
-## 📂 Project Structure
+## <img src="https://api.iconify.design/heroicons/folder-open-solid.svg?color=%233b82f6" width="24" height="24" align="center" /> Project Structure
 
 ```text
 pdo-test-lab/
@@ -80,14 +88,15 @@ pdo-test-lab/
 │   ├── Planting.php        # Planting Data Access Object / Model
 │   ├── install.php         # Database migration & seeder script
 │   ├── testPlanting.php    # CLI test harness for Planting operations
-│   └── test.php            # Sandbox script
+│   └── test.php            # Connection check sandbox script
 ├── .gitignore              # Ignored files and patterns
-└── README.md               # Project documentation
+├── LICENSE                 # MIT License
+└── README.md               # Project documentation with Tailwind icons
 ```
 
 ---
 
-## 🚀 Getting Started
+## <img src="https://api.iconify.design/heroicons/rocket-launch-solid.svg?color=%23f59e0b" width="24" height="24" align="center" /> Getting Started
 
 ### Prerequisites
 
@@ -137,7 +146,7 @@ php testPlanting.php
 
 ---
 
-## 💻 Code Example
+## <img src="https://api.iconify.design/heroicons/code-bracket-solid.svg?color=%238b5cf6" width="24" height="24" align="center" /> Code Example
 
 ### Querying with Prepared Statements
 
@@ -158,13 +167,13 @@ foreach ($records as $row) {
 
 ---
 
-## 🛡️ Security Notes
+## <img src="https://api.iconify.design/heroicons/shield-check-solid.svg?color=%23ef4444" width="24" height="24" align="center" /> Security Notes
 
 - Always use parameterized queries / prepared statements as implemented in `Planting.php` to prevent SQL injection vulnerabilities.
 - For production deployments, move database credentials out of code into environment variables (`.env`).
 
 ---
 
-## 📄 License
+## <img src="https://api.iconify.design/heroicons/document-text-solid.svg?color=%2364748b" width="24" height="24" align="center" /> License
 
 This project is open-source and available under the [MIT License](LICENSE).
